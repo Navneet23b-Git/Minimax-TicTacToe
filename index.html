@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Tic Tac Toe</h1>
+
+    <div class="mode">
+      <button onclick="startGame('ai', 'player')">
+        Play vs AI (Player First)
+      </button>
+
+      <button onclick="startGame('ai', 'ai')">Play vs AI (AI First)</button>
+
+      <button onclick="startGame('player')">Two Player</button>
+    </div>
+
+    <div id="status"></div>
+
+    <div id="board"></div>
+
+    <button onclick="resetGame()">Reset Game</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
